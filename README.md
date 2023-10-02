@@ -15,6 +15,8 @@
 7. Generate a private key for the JWT* : ```openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096```
 8. Generate a public key for the JWT* : ```openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout```
 9. Replace JWT_PASSPHRASE value in the ".env" file by the password you just entered for the generated keys
+
+
 *You can execute these commands in git bash terminal if you don't have openssl installed
 
 ### 3. Usage/Access

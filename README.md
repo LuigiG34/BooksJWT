@@ -1,5 +1,7 @@
 # API REST JWT BOOK API
 
+[![SymfonyInsight](https://insight.symfony.com/projects/fafb4c74-e70b-4891-afcb-71d53e922bd8/big.svg)](https://insight.symfony.com/projects/fafb4c74-e70b-4891-afcb-71d53e922bd8)
+
 ### 1. Requirements
 1. Composer
 2. PHP

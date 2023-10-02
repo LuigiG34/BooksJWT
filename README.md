@@ -12,9 +12,10 @@
 4. Create the database : ```php bin/console doctrine:database:create```
 5. Update the database structure : ```php bin/console doctrine:schema:update --force```
 6. Upload the data fixtures to the database : ```php bin/console doctrine:fixtures:load```
-7. Generate a private key for the JWT* : ```openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096```
-8. Generate a public key for the JWT* : ```openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout```
-9. Replace JWT_PASSPHRASE value in the ".env" file by the password you just entered for the generated keys
+7. Create a folder /config/jwt
+8. Generate a private key for the JWT* : ```openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096```
+9. Generate a public key for the JWT* : ```openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout```
+10. Replace JWT_PASSPHRASE value in the ".env" file by the password you just entered for the generated keys
 
 
 *You can execute these commands in git bash terminal if you don't have openssl installed
